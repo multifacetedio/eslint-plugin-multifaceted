@@ -1,5 +1,3 @@
-const path = require('path');
-
 module.exports = {
   ignorePatterns: ['*.d.ts'],
   overrides: [
@@ -11,21 +9,35 @@ module.exports = {
       ],
       files: ['**/*.ts?(x)'],
       parser: '@typescript-eslint/parser',
-      plugins: ['@typescript-eslint', 'import'],
+      plugins: [
+        '@typescript-eslint',
+        'import',
+      ],
       rules: {
+        '@typescript-eslint/no-extra-parens': [
+          'error',
+          'all',
+          {
+            conditionalAssign: false,
+            enforceForArrowConditionals: false,
+            ignoreJSX: 'multi-line',
+            returnAssign: false,
+          },
+        ],
         '@typescript-eslint/no-shadow': 'error',
+        '@typescript-eslint/semi': 'error',
+        'no-extra-parens': 'off',
         'no-shadow': 'off',
+        'no-useless-constructor': 'off',
         'react/prop-types': 'off',
+        'semi': 'off',
       },
       settings: {
         'import/parsers': {
-          '@typescript-eslint/parser': ['.ts', '.tsx'],
-        },
-        'import/resolver': {
-          typescript: {
-            alwaysTryTypes: true,
-            project: [path.resolve(process.cwd(), 'tsconfig.json')],
-          },
+          '@typescript-eslint/parser': [
+            '.ts',
+            '.tsx',
+          ],
         },
       },
     },

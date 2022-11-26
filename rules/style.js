@@ -4,7 +4,7 @@ module.exports = {
     'array-bracket-newline': [
       'error',
       {
-        minItems: 3,
+        minItems: 2,
         multiline: true,
       },
     ],
@@ -12,7 +12,7 @@ module.exports = {
     'array-element-newline': [
       'error',
       {
-        minItems: 3,
+        minItems: 2,
         multiline: true,
       },
     ],
@@ -25,30 +25,46 @@ module.exports = {
         allowSingleLine: true,
       },
     ],
-    'comma-dangle': ['error', 'always-multiline'],
+    'comma-dangle': [
+      'error',
+      'always-multiline',
+    ],
     'comma-spacing': 'error',
     'comma-style': 'error',
     'computed-property-spacing': 'error',
-    'dot-location': ['error', 'property'],
+    'dot-location': [
+      'error',
+      'property',
+    ],
     'eol-last': 'error',
     'func-call-spacing': 'error',
-    'function-call-argument-newline': ['error', 'consistent'],
-    'function-paren-newline': ['error', 'multiline-arguments'],
-    'indent': ['error', 2],
+    'function-call-argument-newline': [
+      'error',
+      'consistent',
+    ],
+    'function-paren-newline': [
+      'error',
+      'multiline',
+    ],
+    'indent': [
+      'error',
+      2,
+    ],
     'jsx-quotes': 'error',
     'key-spacing': 'error',
     'keyword-spacing': 'error',
     'linebreak-style': 'error',
-    'multiline-ternary': ['error', 'always-multiline'],
+    'multiline-ternary': [
+      'error',
+      'always-multiline',
+    ],
     'new-parens': 'error',
     'newline-per-chained-call': 'error',
     'no-extra-parens': [
       'error',
       'all',
       {
-        enforceForArrowConditionals: false,
-        ignoreJSX: 'all',
-        returnAssign: false,
+        ignoreJSX: 'multi-line',
       },
     ],
     'no-multi-spaces': 'error',
@@ -72,7 +88,7 @@ module.exports = {
           multiline: true,
         },
         ObjectPattern: {
-          minProperties: 4,
+          minProperties: 3,
           multiline: true,
         },
       },
@@ -85,12 +101,24 @@ module.exports = {
       },
     ],
     'object-property-newline': 'error',
-    'padded-blocks': ['error', 'never'],
-    'quotes': ['error', 'single'],
-    'rest-spread-spacing': ['error', 'never'],
+    'padded-blocks': [
+      'error',
+      'never',
+    ],
+    'quotes': [
+      'error',
+      'single',
+    ],
+    'rest-spread-spacing': [
+      'error',
+      'never',
+    ],
     'semi': 'error',
     'semi-spacing': 'error',
-    'semi-style': ['error', 'last'],
+    'semi-style': [
+      'error',
+      'last',
+    ],
     'space-before-blocks': 'error',
     'space-before-function-paren': [
       'error',

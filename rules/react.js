@@ -4,7 +4,10 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
   ],
-  plugins: ['react', 'react-hooks'],
+  plugins: [
+    'react',
+    'react-hooks',
+  ],
   rules: {
     'react/default-props-match-prop-types': 'error',
     'react/forbid-component-props': [
@@ -27,7 +30,10 @@ module.exports = {
     ],
     'react/jsx-closing-bracket-location': 'error',
     'react/jsx-closing-tag-location': 'error',
-    'react/jsx-curly-brace-presence': ['error', 'never'],
+    'react/jsx-curly-brace-presence': [
+      'error',
+      'never',
+    ],
     'react/jsx-curly-newline': [
       'error',
       {
@@ -42,11 +48,26 @@ module.exports = {
         when: 'never',
       },
     ],
-    'react/jsx-equals-spacing': ['error', 'never'],
-    'react/jsx-first-prop-new-line': ['error', 'multiline'],
-    'react/jsx-fragments': ['error', 'syntax'],
-    'react/jsx-indent': ['error', 2],
-    'react/jsx-indent-props': ['error', 2],
+    'react/jsx-equals-spacing': [
+      'error',
+      'never',
+    ],
+    'react/jsx-first-prop-new-line': [
+      'error',
+      'multiline',
+    ],
+    'react/jsx-fragments': [
+      'error',
+      'syntax',
+    ],
+    'react/jsx-indent': [
+      'error',
+      2,
+    ],
+    'react/jsx-indent-props': [
+      'error',
+      2,
+    ],
     'react/jsx-max-props-per-line': 'error',
     'react/jsx-no-constructed-context-values': 'error',
     'react/jsx-no-script-url': 'error',
