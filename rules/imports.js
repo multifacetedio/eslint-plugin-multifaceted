@@ -28,12 +28,12 @@ module.exports = {
     ],
     'import/prefer-default-export': 'off',
     'no-restricted-imports': [
-      'error',
+      'warn',
       {
         patterns: [
           {
             group: ['../*'],
-            message: 'Usage of relative parent imports is not allowed.',
+            message: 'Usage of relative parent imports is discouraged.',
           },
         ],
       },

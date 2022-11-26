@@ -4,9 +4,15 @@ module.exports = {
       env: {
         jest: true,
       },
-      extends: ['plugin:jest/all', 'plugin:testing-library/react'],
+      extends: [
+        'plugin:jest/recommended',
+        'plugin:testing-library/react',
+      ],
       files: ['*.test.ts'],
-      plugins: ['jest', 'testing-library'],
+      plugins: [
+        'jest',
+        'testing-library',
+      ],
       rules: {
         'jest/consistent-test-it': 'error',
         'jest/no-duplicate-hooks': 'warn',
@@ -18,11 +24,6 @@ module.exports = {
         ],
         'jest/prefer-todo': 'warn',
         'jest/require-top-level-describe': 'warn',
-      },
-      settings: {
-        jest: {
-          version: require('jest/package.json').version,
-        },
       },
     },
   ],

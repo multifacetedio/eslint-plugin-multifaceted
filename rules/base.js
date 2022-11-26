@@ -29,7 +29,10 @@ module.exports = {
     'no-useless-constructor': 'error',
     'no-var': 'error',
     'object-shorthand': 'error',
-    'one-var': ['error', 'never'],
+    'one-var': [
+      'error',
+      'never',
+    ],
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
     'prefer-destructuring': 'error',
@@ -37,7 +40,10 @@ module.exports = {
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
-    'quote-props': ['error', 'consistent-as-needed'],
+    'quote-props': [
+      'error',
+      'consistent-as-needed',
+    ],
     'sort-keys': 'off',
     'sort-keys-fix/sort-keys-fix': [
       'warn',
