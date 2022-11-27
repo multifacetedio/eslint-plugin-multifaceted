@@ -24,7 +24,7 @@ module.exports = {
         './rules/imports',
         './rules/style',
         './rules/react',
-        './rules/ts',
+        './rules/typescript',
       ],
     },
   },
